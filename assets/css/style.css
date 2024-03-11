@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 html {
@@ -8,66 +9,143 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Lato;
+  background-color: #0a1e3f;
 }
 
 header {
-  background-color: red;
+  background-color: #091a37;
   display: flex;
   justify-content: flex-end;
 }
 
 nav {
-  padding: 35px 0 0 0;
+  padding: 35px 40px 0 0;
+}
+
+a {
+  padding: 0 20px;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 h1 {
   margin-right: auto;
-  font-size: 3em;
+  font-size: 3.5em;
   padding: 20px;
 }
 
-.hero-image img {
-  width: 100%;
-  height: 15em;
+h2 {
+  font-size: 3em;
+}
+
+.welcome-area {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 1.5em;
+}
+
+.welcome-area img {
+  width: 25%;
+  height: 20em;
+  border-radius: 25px;
+}
+
+.welcome-area-text {
+  width: 25%;
 }
 
 .main-content {
-  background-color: blue;
   margin: 0 auto;
   width: 60%;
-  padding: 15px;
 }
 
-h2 {
-  font-size: 2em;
+.std-content-box {
+  background-color: #192a47;
+  border-radius: 25px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
 }
 
-.my-work-container {
-  background-color: aqua;
+.my-work-content-box {
+  background-color: #192a47;
+  border-radius: 25px 25px 0 0;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.std-content-box-heading {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  border-right: 5px solid white;
+  /* I sourced the below code from a Stack Overflow answer.
+  See README.MD for further details. */
+  flex-basis: 50%;
+}
+
+.std-content-box-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 3em;
+}
+
+.projects-container {
+  background-color: #192a47;
+  border-radius: 0 0 25px 25px;
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  padding: 15px;
   justify-content: space-around;
 }
 
 .hero-project {
-  padding: 15px;
   width: 100%;
   height: 20em;
-  border: black 5px solid;
+  border: white 5px solid;
+}
+
+.hero-project img {
+  width: 100%;
+  height: 100%;
+}
+
+.secondary-project img {
+  width: 100%;
+  height: 100%;
 }
 
 .secondary-project {
-  padding: 10px;
   margin: 20px;
   width: 45%;
   height: 15em;
-  border: black 3px solid;
+  border: white 3px solid;
 }
 
 footer {
   display: flex;
   justify-content: flex-end;
-  background-color: red;
+  height: 3em;
+  align-items: center;
+  background-color: #091a37;
+  margin-top: 1.5em;
+}
+
+footer p {
+  margin-right: 2em;
+  font-size: 1em;
 }
