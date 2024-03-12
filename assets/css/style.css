@@ -4,12 +4,8 @@
   color: white;
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  font-family: Lato;
+  font-family: Lato, Arial, Helvetica, sans-serif;
   background-color: #0a1e3f;
 }
 
@@ -20,17 +16,23 @@ header {
 }
 
 nav {
-  padding: 35px 40px 0 0;
+  display: flex;
+  align-items: center;
 }
 
-a {
+nav a {
   padding: 0 20px;
   font-size: 1.3em;
   text-decoration: none;
 }
 
+.std-content-box-content p a {
+  font-size: 1em;
+  padding: 0;
+}
+
 a:hover {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 h1 {
@@ -53,13 +55,13 @@ h2 {
 }
 
 .welcome-area img {
-  width: 25%;
+  width: 30em;
   height: 20em;
   border-radius: 25px;
 }
 
 .welcome-area-text {
-  width: 25%;
+  width: 30em;
 }
 
 .main-content {
@@ -89,10 +91,9 @@ h2 {
   display: flex;
   text-align: center;
   justify-content: center;
-  text-align: center;
   height: 100%;
   border-right: 5px solid white;
-  /* I sourced the below code from a Stack Overflow answer.
+  /* I sourced the below code using 'flex-basis' from a mdm web docs page.
   See README.MD for further details. */
   flex-basis: 50%;
 }
@@ -114,26 +115,65 @@ h2 {
 }
 
 .hero-project {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 20em;
   border: white 5px solid;
+  text-align: center;
+  background-color: #091a37;
+}
+
+.hero-project a {
+  display: flex;
+  flex-direction: column;
+  height: 25em;
+  text-decoration: none;
+}
+
+.hero-project figcaption {
+  font-size: 1.75em;
 }
 
 .hero-project img {
-  width: 100%;
-  height: 100%;
-}
-
-.secondary-project img {
-  width: 100%;
-  height: 100%;
+  height: 0;
+  /* I sourced the blow code using 'flex-grow' from a mdn web docs website.
+  See README.MD for full details. */
+  flex-grow: 1;
 }
 
 .secondary-project {
+  display: flex;
+  flex-direction: column;
   margin: 20px;
   width: 45%;
   height: 15em;
+  text-align: center;
   border: white 3px solid;
+  background-color: #091a37;
+}
+
+.secondary-project a {
+  display: flex;
+  flex-direction: column;
+  height: 25em;
+  text-decoration: none;
+}
+
+.secondary-project figcaption {
+  font-size: 1.25em;
+}
+
+.secondary-project img {
+  height: 0;
+  /* I sourced the blow code from a Stack Overflow answer.
+  See README.MD for full details. */
+  flex-grow: 1;
+}
+
+.std-content-box a {
+  padding: 0 20px;
+  font-size: 1.3em;
+  text-decoration: none;
 }
 
 footer {
@@ -148,4 +188,56 @@ footer {
 footer p {
   margin-right: 2em;
   font-size: 1em;
+}
+
+/* Media query selectors below */
+@media screen and (max-width: 1450px) {
+  .secondary-project {
+    width: 80%;
+  }
+
+  .main-content {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header h1 {
+    margin-right: 0;
+  }
+
+  nav {
+    /* background-color: red; */
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  .welcome-area {
+    flex-direction: column;
+  }
+
+  .welcome-area-text {
+    padding-bottom: 15px;
+  }
+
+  .std-content-box {
+    flex-direction: column;
+  }
+  .my-work-content-box {
+    flex-direction: column;
+  }
+  .std-content-box-heading {
+    border-right: 0;
+  }
+  .std-content-box-content {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    text-align: center;
+  }
 }
