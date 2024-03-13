@@ -2,12 +2,12 @@
 
 ## Description
 
-This project is a personal porfolio webpage to host information about myself and my web development projects.
+This project is a personal portfolio webpage to host information about myself and my web development projects.
 
-- My motivation to complete this project was to ensure that I would have a live location to house information about myself and my projects.
+- My motivation to complete this project was to ensure that I would have a live location to contain information about myself and my web development projects.
 - Building this project now gives me a way to showcase my work in an interesting way for potential employers and connections to see.
-- Previously, my digital footprint was quite minimal, so this project solives the problem of not having work online to be reviewed easily.
-- Completing this project taught me several design tricks to accomodate text and graphics without breaking the overall layout of the site. Specifically, I learned some new flexbox commands like 'flex-basis' and 'flex-grow' to ensure my content fit in the correct areas - especially when the page window changed to accomodate smaller devices.
+- Previously, my digital footprint was quite minimal, so this project solves the problem of not having work online to be viewed easily.
+- Completing this project taught me several design tricks to accommodate text and graphics without breaking the overall layout of the site. Specifically, I learned some new flexbox commands like 'flex-basis' and 'flex-grow' to ensure my content fit in the correct areas - especially when the viewport window size was altered for smaller screens.
 
 ### Screenshots of deployed application at different screen resolutions
 
@@ -52,29 +52,39 @@ Alternatively, you can clone the repository and run the project locally by follo
 
 ## Credits
 
-### Code sourced
+### Code credits
 
 My codebase uses two CSS flex properties sourced from external locations.
 
-- The first is the use of 'flex-basis' on line 98 of my styles.css. The purpose of using flex basis was to ensure that the .std-content-box-heading class filled out more space so the subheading could fit on one line. Specifically, this line makes sure that the class takes up 50% of the initial main size as a flex item.
+1. The first is the use of 'flex-basis' which can be found on line 98 of my styles.css file:
 
-I sourced this idea for using this code from an mdn web docs page linked here:
+![Screenshot showing use of 'flex-basis' property in styles.css codebase.](./assets/images/flex-basis_usage_in_styles_css.png)
+
+The purpose of using flex-basis was to ensure that the '.std-content-box-heading' class filled out more space so the subheading could be spaced further out to fit one line. While this isn't essential for my code, I prefer the way it makes these sections look from a design perspective.
+
+I sourced this idea for using this code from an MDN web documentation page linked here:
 https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
 
-- The second is the use of 'flex-grow' on line 141 and 170 of my styles.css. The purpose of the grow factor is to expand the image within the parent div container to completley fill the space. By setting the height to '0' in the line above, the image fills the div container completley, even if the viewport is changed unexpectedly.
+2. The second is the use of 'flex-grow' which can be found on line 141 and 170 of my styles.css file:
+
+![Screenshot showing the first use of 'flex-grow' property in styles.css codebase.](./assets/images/flex-grow_usage_in_styles.css1.png)
+
+![Screenshot showing the second use of 'flex-grow' property in styles.css codebase.](./assets/images/flex-grow_usage_in_styles.css2.png)
+
+The purpose of the grow factor is to expand the image within the parent div container to completely fill the space. By setting the height to '0' in the line above, the image fills the div container completely, even if the viewport is altered.
 
 I sourced this code from a Stack Overflow answer linked here:
 https://stackoverflow.com/questions/74477930/how-to-build-a-figure-with-a-fixed-height-and-an-img-and-figcaption-that-flex-to
 
 ### Images/Graphics sourced
 
-The secondary projects use a placeholder image sourced from Wikipedia here:
+The secondary projects under the 'My Work' section use a placeholder image sourced from Wikipedia:
 https://en.m.wikipedia.org/wiki/File:Comingsoon.png
 
 According to the Wikipedia licencing listed:
 
 This file is made available under the [Creative Commons](https://en.wikipedia.org/wiki/en:Creative_Commons) [CC0 1.0 Universal Public Domain Dedication.](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
-The person who associated a work with this deed has dedicated the work to the public domain by waiving all of their rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission."
+The person who associated a work with this deed has dedicated the work to the public domain by waiving all of their rights to the work worldwide under copyright law, including all related and neighbouring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
 
 ## License
 
