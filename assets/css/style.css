@@ -93,7 +93,7 @@ h2 {
   justify-content: center;
   height: 100%;
   border-right: 5px solid white;
-  /* I sourced the below code using 'flex-basis' from a mdm web docs page.
+  /* I sourced the below code using 'flex-basis' from a MDN web documentation page.
   See README.MD for further details. */
   flex-basis: 50%;
 }
@@ -136,7 +136,7 @@ h2 {
 
 .hero-project img {
   height: 0;
-  /* I sourced the blow code using 'flex-grow' from a mdn web docs website.
+  /* I sourced the blow code using 'flex-grow' from mdn web docs documentation.
   See README.MD for full details. */
   flex-grow: 1;
 }
@@ -165,7 +165,7 @@ h2 {
 
 .secondary-project img {
   height: 0;
-  /* I sourced the blow code from a Stack Overflow answer.
+  /* I sourced the blow code using 'flex-grow' from mdn web docs documentation.
   See README.MD for full details. */
   flex-grow: 1;
 }
