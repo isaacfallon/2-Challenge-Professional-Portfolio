@@ -2,12 +2,12 @@
 
 ## Description
 
-This project is a personal portfolio webpage to host information about myself and my web development projects.
+This project is a personal portfolio webpage to host information about myself and my web development projects. It serves as the week 2 challenge for The University of Sydney's Coding Bootcamp.
 
 - My motivation to complete this project was to ensure that I would have a live location to contain information about myself and my web development projects.
 - Building this project now gives me a way to showcase my work in an interesting way for potential employers and connections to see.
 - Previously, my digital footprint was quite minimal, so this project solves the problem of not having work online to be viewed easily.
-- Completing this project taught me several design tricks to accommodate text and graphics without breaking the overall layout of the site. Specifically, I learned some new flexbox commands like 'flex-basis' and 'flex-grow' to ensure my content fit in the correct areas - especially when the viewport window size was altered for smaller screens.
+- Completing this project taught me several design tricks to accommodate text and graphics without breaking the overall layout of the site. Specifically, I learned some new flexbox commands like 'flex-basis' and 'flex-grow' to ensure my content fit in the correct areas - especially when the viewport window size was reduced for smaller screens.
 
 ### Screenshots of deployed application at different screen resolutions
 
@@ -15,13 +15,13 @@ This project is a personal portfolio webpage to host information about myself an
 
 ![Screenshot showing completed webpage for the week 2 portfolio page challenge in full resolution view.](./assets/images/IF_PortfolioScreenshot_FullResolution.png)
 
-#### Media query applied when the viewport is less than 1450px (ideal for tablet screens):
+#### Media query applied when the viewport is less than 1450 px in width (ideal for tablet screens):
 
-![Screenshot showing completed webpage for the week 2 portfolio page challenge when the viewport is less than 1450px.](./assets/images/IF_PortfolioScreenshot_MaxWidth-1450px.png)
+![Screenshot showing completed webpage for the week 2 portfolio page challenge when the viewport is less than 1450px wide.](./assets/images/IF_PortfolioScreenshot_MaxWidth-1450px.png)
 
-#### Media query applied when the viewport is less than 800px (ideal for phone screens):
+#### Media query applied when the viewport is less than 800 px in width (ideal for phone screens):
 
-![Screenshot showing completed webpage for the week 2 portfolio page challenge when the viewport is less than 800px.](./assets/images/IF_PortfolioScreenshot_MaxWidth-800px.png)
+![Screenshot showing completed webpage for the week 2 portfolio page challenge when the viewport is less than 800px wide.](./assets/images/IF_PortfolioScreenshot_MaxWidth-800px.png)
 
 ## Installation
 
@@ -58,20 +58,20 @@ My codebase uses two CSS flex properties sourced from external locations.
 
 1. The first is the use of 'flex-basis' which can be found on line 98 of my styles.css file:
 
-![Screenshot showing use of 'flex-basis' property in styles.css codebase.](./assets/images/flex-basis_usage_in_styles_css.png)
+![Screenshot showing use of 'flex-basis' property in styles.css file on line 98.](./assets/images/flex-basis_usage_in_styles_css.png)
 
-The purpose of using flex-basis was to ensure that the '.std-content-box-heading' class filled out more space so the subheading could be spaced further out to fit one line. While this isn't essential for my code, I prefer the way it makes these sections look from a design perspective.
+The purpose of using 'flex-basis' was to ensure that the '.std-content-box-heading' class filled out more space so the subheading could properly fit on one line. While this isn't essential for my code to work, I prefer the way it makes these sections look from a design perspective.
 
-I sourced this idea for using this code from an MDN web documentation page linked here:
+I sourced this idea for using this flex property from an MDN web documentation page linked here:
 https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
 
 2. The second is the use of 'flex-grow' which can be found on line 141 and 170 of my styles.css file:
 
-![Screenshot showing the first use of 'flex-grow' property in styles.css codebase.](./assets/images/flex-grow_usage_in_styles.css1.png)
+![Screenshot showing the first use of 'flex-grow' property in styles.css file on line 141.](./assets/images/flex-grow_usage_in_styles.css1.png)
 
-![Screenshot showing the second use of 'flex-grow' property in styles.css codebase.](./assets/images/flex-grow_usage_in_styles.css2.png)
+![Screenshot showing the second use of 'flex-grow' property in styles.css file on line 170.](./assets/images/flex-grow_usage_in_styles.css2.png)
 
-The purpose of the grow factor is to expand the image within the parent div container to completely fill the space. By setting the height to '0' in the line above, the image fills the div container completely, even if the viewport is altered.
+The purpose of 'flex-grow' is to expand the image within the parent div container to completely fill the space. By setting the height to '0' in the line above, the 'flex-grow' property then fills the div container completely, even if the viewport size is reduced.
 
 I sourced this code from a Stack Overflow answer linked here:
 https://stackoverflow.com/questions/74477930/how-to-build-a-figure-with-a-fixed-height-and-an-img-and-figcaption-that-flex-to
@@ -83,8 +83,8 @@ https://en.m.wikipedia.org/wiki/File:Comingsoon.png
 
 According to the Wikipedia licencing listed:
 
-This file is made available under the [Creative Commons](https://en.wikipedia.org/wiki/en:Creative_Commons) [CC0 1.0 Universal Public Domain Dedication.](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
-The person who associated a work with this deed has dedicated the work to the public domain by waiving all of their rights to the work worldwide under copyright law, including all related and neighbouring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
+*"This file is made available under the [Creative Commons](https://en.wikipedia.org/wiki/en:Creative_Commons) [CC0 1.0 Universal Public Domain Dedication.](https://creativecommons.org/publicdomain/zero/1.0/deed.en)*
+*The person who associated a work with this deed has dedicated the work to the public domain by waiving all of their rights to the work worldwide under copyright law, including all related and neighbouring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission."*
 
 ## License
 

@@ -3,22 +3,32 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- A reset.css stylesheet has been added to ensure fallbacks 
+      are in place depending on the browser used. -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Isaac Fallon | Portfolio</title>
   </head>
 
   <body>
+    <!-- The first collection of elements fall within the 'header' tag.
+    The 'h1' and 'nav' tags share horizontal space within the header 
+    as child elements. -->
     <header>
       <h1>Isaac Fallon</h1>
       <nav>
+        <!-- The ID tags here link to specific parts of the website. -->
         <a href="#about-me">About Me</a>
         <a href="#my-work">My Work</a>
         <a href="#contact-me">Contact Me</a>
       </nav>
     </header>
 
+    <!-- The overall content below the header is nested within 
+      parent div container tags. -->
     <div class="welcome-area">
+      <!-- To ensure the welcome text and image of myself sit in the 
+        same space, they share a parent div container. -->
       <div class="welcome-area-text">
         <h2>Hey, I'm Isaac!</h2>
         <p>Welcome to my page.</p>
@@ -30,7 +40,11 @@
     </div>
 
     <div class="main-content">
+      <!-- These section tags mark the specific content topics 
+        within the main content div container. -->
       <section class="std-content-box" id="about-me">
+        <!-- To sit the heading and text in the same horizontal space,
+        they each have their own div tags within the parent div of 'std-content-box'. -->
         <div class="std-content-box-heading">
           <h2>About Me</h2>
         </div>
@@ -48,6 +62,8 @@
       </section>
 
       <section class="my-work-content-box" id="my-work">
+        <!-- The same heading and text div hierarchy is used for 
+          the first part of the 'My Work' section.  -->
         <div class="std-content-box-heading">
           <h2>My Work</h2>
         </div>
@@ -65,7 +81,11 @@
         </div>
       </section>
 
+      <!-- This 'projects-container' class houses the project images. -->
       <div class="projects-container">
+        <!-- Each project image is nested within a figure to then use a 
+        'figcaption' and wrapped in an 'a' tag to link off to the 
+        specific project link. -->
         <figure class="hero-project" id="project-1">
           <figcaption>Code Refactoring Project for Horiseon Marketing Agency</figcaption>
           <a
@@ -80,6 +100,9 @@
         </figure>
 
         <figure class="secondary-project" id="project-2">
+          <!-- The same principle for the hero project is applied for the 
+          secondary projects. They are simply smaller 
+          (see notes in styles.css for full details). -->
           <figcaption>Project coming soon (links to GitHub)</figcaption>
           <a href="https://github.com/isaacfallon/" target="_blank">
             <img src="./assets/images/coming-soon-placeholder.jpg" alt="A placeholder image with the words 'coming soon'">
@@ -95,6 +118,9 @@
 
       <section class="std-content-box" id="contact-me">
         <div class="std-content-box-heading">
+          <!-- Like the 'std-content-box' classes above it, the 'Contact me'
+          section uses a div container for the heading and the content 
+        (in this case a series of 'a' tags) -->
           <h2>Contact Me</h2>
         </div>
         <div class="std-content-box-content">
@@ -107,6 +133,7 @@
       </section>
     </div>
 
+    <!-- Standard footer with a COPYRIGHT symbol code. -->
     <footer>
       <p>2024 &copy; Isaac Fallon</p>
     </footer>
