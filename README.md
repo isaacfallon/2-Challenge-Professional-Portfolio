@@ -56,20 +56,20 @@ Alternatively, you can clone the repository and run the project locally by follo
 
 My codebase uses two CSS flex properties sourced from external locations.
 
-1. The first is the use of 'flex-basis' which can be found on line 98 of my styles.css file:
+1. The first is the use of 'flex-basis' which can be found on line 119 of my styles.css file:
 
-![Screenshot showing use of 'flex-basis' property in styles.css file on line 98.](./assets/images/flex-basis_usage_in_styles_css.png)
+![Screenshot showing use of 'flex-basis' property in styles.css file on line 119.](./assets/images/flex-basis_usage_in_styles_css.png)
 
 The purpose of using 'flex-basis' was to ensure that the '.std-content-box-heading' class filled out more space so the subheading could properly fit on one line. While this isn't essential for my code to work, I prefer the way it makes these sections look from a design perspective.
 
 I sourced this idea for using this flex property from an MDN web documentation page linked here:
 https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
 
-2. The second is the use of 'flex-grow' which can be found on line 141 and 170 of my styles.css file:
+2. The second is the use of 'flex-grow' which can be found on line 184 and 219 of my styles.css file:
 
-![Screenshot showing the first use of 'flex-grow' property in styles.css file on line 141.](./assets/images/flex-grow_usage_in_styles.css1.png)
+![Screenshot showing the first use of 'flex-grow' property in styles.css file on line 184.](./assets/images/flex-grow_usage_in_styles.css1.png)
 
-![Screenshot showing the second use of 'flex-grow' property in styles.css file on line 170.](./assets/images/flex-grow_usage_in_styles.css2.png)
+![Screenshot showing the second use of 'flex-grow' property in styles.css file on line 219.](./assets/images/flex-grow_usage_in_styles.css2.png)
 
 The purpose of 'flex-grow' is to expand the image within the parent div container to completely fill the space. By setting the height to '0' in the line above, the 'flex-grow' property then fills the div container completely, even if the viewport size is reduced.
 
